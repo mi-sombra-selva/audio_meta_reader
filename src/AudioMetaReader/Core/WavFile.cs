@@ -16,4 +16,4 @@ namespace AudioMetaReader.Core
             Metadata = _metadataReader.ReadMetadata(FilePath);
         }
     }
-} 
+}

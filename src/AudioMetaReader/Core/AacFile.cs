@@ -2,11 +2,11 @@ using AudioMetaReader.Metadata;
 
 namespace AudioMetaReader.Core
 {
-    public class Mp3File : AudioFile
+    public class AacFile : AudioFile
     {
         private readonly IMetadataReader _metadataReader;
 
-        public Mp3File(string filePath, IMetadataReader metadataReader) : base(filePath)
+        public AacFile(string filePath, IMetadataReader metadataReader) : base(filePath)
         {
             _metadataReader = metadataReader;
         }

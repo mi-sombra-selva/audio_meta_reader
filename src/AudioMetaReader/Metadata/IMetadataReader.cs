@@ -4,4 +4,4 @@ namespace AudioMetaReader.Metadata
     {
         AudioMetadata ReadMetadata(string filePath);
     }
-} 
+}

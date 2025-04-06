@@ -14,4 +14,4 @@ namespace AudioMetaReader.Core
 
         public abstract void ReadMetadata();
     }
-} 
+}

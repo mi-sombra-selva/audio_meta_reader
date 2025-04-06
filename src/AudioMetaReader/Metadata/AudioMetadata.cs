@@ -19,4 +19,4 @@ namespace AudioMetaReader.Metadata
                    $"Duration: {Duration:F2} sec";
         }
     }
-} 
+}

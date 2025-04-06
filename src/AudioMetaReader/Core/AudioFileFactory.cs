@@ -15,8 +15,11 @@ namespace AudioMetaReader.Core
             {
                 ".wav" => new WavFile(filePath, new WavMetadataReader()),
                 ".mp3" => new Mp3File(filePath, new Mp3MetadataReader()),
+                ".flac" => new FlacFile(filePath, new FlacMetadataReader()),
+                ".ogg" => new OggFile(filePath, new OggMetadataReader()),
+                ".aac" => new AacFile(filePath, new AacMetadataReader()),
                 _ => throw new NotSupportedException($"File format {extension} is not supported")
             };
         }
     }
-} 
+}

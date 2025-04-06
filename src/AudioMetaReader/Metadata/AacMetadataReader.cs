@@ -1,6 +1,6 @@
 namespace AudioMetaReader.Metadata
 {
-    public class Mp3MetadataReader : IMetadataReader
+    public class AacMetadataReader : IMetadataReader
     {
         public AudioMetadata ReadMetadata(string filePath)
         {
@@ -11,7 +11,7 @@ namespace AudioMetaReader.Metadata
                 return new AudioMetadata
                 {
                     FileName = Path.GetFileName(filePath),
-                    Format = "MP3",
+                    Format = "AAC",
                     Bitrate = (int)(properties.AudioBitrate / 1000), // Convert to kbps
                     SampleRate = properties.AudioSampleRate,
                     Channels = properties.AudioChannels,

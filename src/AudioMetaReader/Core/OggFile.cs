@@ -2,11 +2,11 @@ using AudioMetaReader.Metadata;
 
 namespace AudioMetaReader.Core
 {
-    public class Mp3File : AudioFile
+    public class OggFile : AudioFile
     {
         private readonly IMetadataReader _metadataReader;
 
-        public Mp3File(string filePath, IMetadataReader metadataReader) : base(filePath)
+        public OggFile(string filePath, IMetadataReader metadataReader) : base(filePath)
         {
             _metadataReader = metadataReader;
         }
